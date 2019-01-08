@@ -20,6 +20,10 @@ zuul:
     eager-load:
       enabled: true
 
+blw163-service:
+  ribbon:
+    listOfServers: ${BLW163_FEIGN:blw163}:8099
+
 hystrix:
   command:
     default:
