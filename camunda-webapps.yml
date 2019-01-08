@@ -1,0 +1,21 @@
+spring:
+  camunda-bpm-datasource:
+    jdbc-url: ${DATASOURCE_URL}
+    username: camunda
+    password: camunda
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    enabled: false
+
+camunda:
+  bpm:
+    authorization:
+      enabled: true
+    admin-user:
+      id: admin
+      password: blw163admin
+    database:
+      schema-update: true
+      table-prefix: ""
+      type: postgres
+

@@ -1,0 +1,21 @@
+blw163:
+  webservices:
+    oracleTaskServiceUrl: http://${SOASUITEHOSTNAME}:8888/integration/services/TaskService/TaskServicePort
+    oracleTaskQueryServiceUrl: http://${SOASUITEHOSTNAME}:8888/integration/services/TaskQueryService/TaskQueryService
+    bpmwFairExceptionSafeUrl: http://${SOASUITEHOSTNAME}:8888/bpmw-fair-1.100/ExceptionSafeSLSB
+  externaltask:
+    timeout: 10
+spring:
+  datasource:
+    jdbc-url: ${DATASOURCE_URL}
+    url: ${DATASOURCE_URL}
+    username: camunda
+    password: camunda
+    driver-class-name: org.postgresql.Driver
+
+camunda:
+  bpm:
+    database:
+      schema-update: true
+      table-prefix: ""
+      type: postgres
