@@ -5,6 +5,7 @@ blw163:
     bpmwFairExceptionSafeUrl: http://${SOASUITEHOSTNAME}:8888/bpmw-fair-1.100/ExceptionSafeSLSB
   externaltask:
     timeout: 10
+    retries: 3
   assignment:
     group: Team2.3
 spring:
