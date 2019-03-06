@@ -1,1 +1,14 @@
-sdf
+spring:
+  datasource:
+    jdbc-url: ${DATASOURCE_URL}
+    url: ${DATASOURCE_URL}
+    username: camunda
+    password: camunda
+    driver-class-name: org.postgresql.Driver
+
+camunda:
+  bpm:
+    database:
+      schema-update: true
+      table-prefix: ""
+      type: postgres
